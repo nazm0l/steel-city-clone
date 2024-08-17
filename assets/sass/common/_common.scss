@@ -1,0 +1,180 @@
+/*
+  Theme Name: SteelCity - Construction Building Template
+  Support: info@gmail.com
+  Description: SteelCity - Construction Building Template
+  Version: 1.0
+*/
+
+/* CSS Index
+============================
+01. Variable CSS
+02. Common CSS
+03. Button
+04. Header
+05. Search
+06. OffCanvas
+07. Mobile Menu
+08. Banner
+09. About
+10. Services
+11. Work
+12. Counter
+13. Employee
+14. Get Updates
+15. Working Process
+16. Faq
+17. Testimonial
+18. Messages
+19. News
+20. Footer
+21. Breadcrumb
+22. Contact Form
+23. Contact Map
+24. Call to Action
+============================
+*/
+
+/*=============================
+	1. Google Fonts
+===============================*/
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;600;700;800&display=swap');
+
+/*=============================
+	01. Variable CSS start
+===============================*/
+:root {
+	--body-font-family: 'Rubik', sans-serif;
+	--font-secondary: 'Rajdhani', sans-serif;
+	--link-font-family: 'Rajdhani', sans-serif;
+	--primary: #DF2339;
+	--black: #171717;
+	--white: #ffffff;
+	--paragraph-color: #616670;
+	--section-background: #F3F3F3;
+	--body-font-size: 16px;
+	--body-font-weight: 400;
+	--body-line-height: 1.875em;
+	--transision: all 0.3s ease-out 0s;
+	--border-colour: #E3E3E3;
+}
+
+
+/*=============================
+	02. Common CSS start
+===============================*/
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: var(--body-font-family);
+	font-weight: var(--body-font-weight);
+	font-size: var(--body-font-size);
+	line-height: var(--body-line-height);
+	color: var(--black);
+	overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+}
+
+a,
+span,
+small {
+	display: inline-block;
+}
+
+a,
+button {
+	-webkit-transition: all 0.3s ease-out 0s;
+	-moz-transition: all 0.3s ease-out 0s;
+	-ms-transition: all 0.3s ease-out 0s;
+	-o-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
+	text-decoration: none;
+}
+
+a:focus,
+.btn:focus,
+button:focus {
+	text-decoration: none;
+	outline: none;
+	box-shadow: none;
+}
+
+
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	font-size: var(--body-font-size);
+	font-weight: var(--body-font-weight);
+	line-height: var(--body-line-height);
+	color: var(--paragraph-color);
+	margin: 0;
+	padding: 0;
+}
+
+*::-moz-selection {
+	background: var(--primary);
+	color: var(--white);
+	text-shadow: none;
+}
+
+::-moz-selection {
+	background: var(--primary);
+	color: var(--white);
+	text-shadow: none;
+}
+
+::selection {
+	background: var(--primary);
+	color: var(--white);
+	text-shadow: none;
+}
+
+
+// theme btn
+.theme-btn {
+	color: var(--white);
+	font-family: var(--font-secondary);
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 32px;
+	letter-spacing: 1.28px;
+	background-color: var(--primary);
+	border-radius: 5px;
+	padding: 14px 30px;
+	svg{
+		stroke: var(--white);
+		width: 16px;
+		height: 16px;
+		margin-left: 5px;
+		stroke-width: 3px;
+	}
+	&:hover{
+		background-color: var(--black);
+	}
+}
+
+.container {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.row {
+	--bs-gutter-x: 30px;
+}
