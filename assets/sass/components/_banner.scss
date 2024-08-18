@@ -2,3 +2,32 @@
 	04. Banner part
 ===============================*/
 /* banner area one start */
+.banner-area-one{
+	width: 100%;
+	height: calc(100vh - 100px);
+	
+	.sub-title{
+		font-family: var(--font-secondary);
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 27px;
+		color: var(--primary);
+		text-transform: uppercase;
+		margin-bottom: 10px;
+	}
+
+	.title{
+		font-family: var(--font-secondary);
+		font-weight: 700;
+		font-size: 68px;
+		line-height: 115%;
+		color: var(--black);
+		padding-right: 55px;
+		margin-bottom: 20px;
+	}
+
+	p{
+		line-height: 30px;
+		margin-bottom: 34px;
+	}
+}
