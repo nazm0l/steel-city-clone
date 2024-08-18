@@ -280,8 +280,27 @@ p {
 .banner-area-one {
   width: 100%;
   height: calc(100vh - 100px);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: contain;
+  background-color: var(--white);
 }
-.banner-area-one .sub-title {
+.banner-area-one .banner-shape {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.banner-area-one .primary-colour {
+  fill: var(--primary);
+}
+.banner-area-one .black-colour {
+  fill: var(--black);
+}
+.banner-area-one .banner-text .sub-title {
   font-family: var(--font-secondary);
   font-size: 18px;
   font-weight: 700;
@@ -290,7 +309,7 @@ p {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-.banner-area-one .title {
+.banner-area-one .banner-text .title {
   font-family: var(--font-secondary);
   font-weight: 700;
   font-size: 68px;
@@ -299,9 +318,21 @@ p {
   padding-right: 55px;
   margin-bottom: 20px;
 }
-.banner-area-one p {
+.banner-area-one .banner-text p {
   line-height: 30px;
   margin-bottom: 34px;
+}
+.banner-area-one .banner-image {
+  position: relative;
+  width: 762px;
+  height: calc(100vh - 150px);
+}
+.banner-area-one .banner-image img {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 80px;
 }
 
 /*# sourceMappingURL=style.css.map */
