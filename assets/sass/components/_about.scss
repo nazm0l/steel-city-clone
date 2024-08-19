@@ -1,0 +1,92 @@
+/*=============================
+	04. About part
+===============================*/
+/* about area one start */
+
+.about-area-one{
+    padding: 120px 0px;
+    background-color: var(--section-background);
+
+    .about-image{
+        margin-left: -193px;
+        
+        img{
+            clip-path: polygon(0 0, 77% 0, 100% 100%, 20% 100%);
+        }
+
+        .active-customer{
+            padding: 13px 22px;
+            border: 1px solid var(--border-colour);
+            border-radius: 4px;
+            background-color: var(--white);
+            right: 0px;
+            bottom: 32px;
+            gap: 14px;
+
+            .text{
+                .number{
+                    color: var(--black);
+                    font-family: var(--font-secondary);
+                    font-size: 48px;
+                    font-weight: 700;
+                    line-height: 52px;
+                    text-transform: capitalize;
+                }
+                p{
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 30px;
+                    color: var(--paragraph-color);
+                }
+            }
+        }
+    }
+
+    .about-text{
+        .section-title{
+            max-width: 655px;
+            padding-left: 30px;
+            
+            .sub-title {
+                margin-left: 30px;
+            }
+            
+            .title {
+                padding-right: 120px;
+                margin-bottom: 20px;
+            }
+            
+            p {
+                font-size: 16px;
+                line-height: 30px;
+                color: var(--black);
+                margin-bottom: 60px;
+            }
+        }
+
+        .about-list-info{
+            gap: 18px;
+            padding-left: 94px;
+            margin-bottom: 30px;
+            .icon {
+                width: 30px;
+                height: 30px;
+            }
+
+            .info-text {
+                .info-title{
+                    font-family: var(--font-secondary);
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 30px;
+                    color: var(--black);
+                    margin-bottom: 10px;
+                }
+
+            }
+        }
+        .about-list-info-second{
+            padding-left: 140px;
+        }
+    }
+}

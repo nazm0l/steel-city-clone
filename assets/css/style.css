@@ -172,6 +172,50 @@ p {
   --bs-gutter-x: 30px;
 }
 
+.section-title {
+  margin-bottom: 60px;
+}
+.section-title .sub-title {
+  color: var(--primary);
+  font-family: var(--font-secondary);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
+}
+.section-title .sub-title::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 1px;
+  top: 50%;
+  right: -30px;
+  transform: translateY(-50%);
+  background-color: var(--primary);
+}
+.section-title .sub-title::after {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 1px;
+  top: 50%;
+  left: -30px;
+  transform: translateY(-50%);
+  background-color: var(--primary);
+}
+.section-title .title {
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  color: var(--black);
+  text-transform: capitalize;
+}
+
 /*=============================
 	04. Header part
 ===============================*/
@@ -333,6 +377,81 @@ p {
   top: 50%;
   transform: translateY(-50%);
   left: 80px;
+}
+
+/*=============================
+	04. About part
+===============================*/
+/* about area one start */
+.about-area-one {
+  padding: 120px 0px;
+  background-color: var(--section-background);
+}
+.about-area-one .about-image {
+  margin-left: -193px;
+}
+.about-area-one .about-image img {
+  clip-path: polygon(0 0, 77% 0, 100% 100%, 20% 100%);
+}
+.about-area-one .about-image .active-customer {
+  padding: 13px 22px;
+  border: 1px solid var(--border-colour);
+  border-radius: 4px;
+  background-color: var(--white);
+  right: 0px;
+  bottom: 32px;
+  gap: 14px;
+}
+.about-area-one .about-image .active-customer .text .number {
+  color: var(--black);
+  font-family: var(--font-secondary);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 52px;
+  text-transform: capitalize;
+}
+.about-area-one .about-image .active-customer .text p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: var(--paragraph-color);
+}
+.about-area-one .about-text .section-title {
+  max-width: 655px;
+  padding-left: 30px;
+}
+.about-area-one .about-text .section-title .sub-title {
+  margin-left: 30px;
+}
+.about-area-one .about-text .section-title .title {
+  padding-right: 120px;
+  margin-bottom: 20px;
+}
+.about-area-one .about-text .section-title p {
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--black);
+  margin-bottom: 60px;
+}
+.about-area-one .about-text .about-list-info {
+  gap: 18px;
+  padding-left: 94px;
+  margin-bottom: 30px;
+}
+.about-area-one .about-text .about-list-info .icon {
+  width: 30px;
+  height: 30px;
+}
+.about-area-one .about-text .about-list-info .info-text .info-title {
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--black);
+  margin-bottom: 10px;
+}
+.about-area-one .about-text .about-list-info-second {
+  padding-left: 140px;
 }
 
 /*# sourceMappingURL=style.css.map */
