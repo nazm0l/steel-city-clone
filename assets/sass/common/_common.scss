@@ -164,9 +164,27 @@ p {
 		height: 16px;
 		margin-left: 5px;
 		stroke-width: 3px;
+		transition: var(--transition);
 	}
 	&:hover{
 		background-color: var(--black);
+	}
+}
+
+.theme-btn-border{
+	color: var(--black);
+	background-color: transparent;
+	border: 1px solid var(--primary);
+	svg{
+		stroke: var(--black);
+	}
+
+	&:hover{
+		background-color: var(--primary);
+		color: var(--white);
+		svg{
+			stroke: var(--white);
+		}
 	}
 }
 

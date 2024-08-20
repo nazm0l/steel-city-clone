@@ -1,0 +1,41 @@
+/*=============================
+	04. Services part
+===============================*/
+/* services area one start */
+
+.services-area-one{
+    background-color: var(--section-background);
+
+    .section-title{
+        .dark{
+            color: var(--black);
+        }
+        .no-after{
+
+            &::after{
+                display: none;
+            }
+        }
+    }
+    .service-info {
+        margin-top: 40px;
+    }
+
+    .all-services{
+        padding-bottom: 120px;
+        .service-item{
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid var(--border-colour);
+            .title{
+                color: var(--black);
+                font-family: var(--font-secondary);
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 30px;
+                margin-left: 30px;
+            }
+
+        }
+    }
+}

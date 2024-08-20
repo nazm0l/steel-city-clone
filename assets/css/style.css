@@ -158,9 +158,26 @@ p {
   height: 16px;
   margin-left: 5px;
   stroke-width: 3px;
+  transition: var(--transition);
 }
 .theme-btn:hover {
   background-color: var(--black);
+}
+
+.theme-btn-border {
+  color: var(--black);
+  background-color: transparent;
+  border: 1px solid var(--primary);
+}
+.theme-btn-border svg {
+  stroke: var(--black);
+}
+.theme-btn-border:hover {
+  background-color: var(--primary);
+  color: var(--white);
+}
+.theme-btn-border:hover svg {
+  stroke: var(--white);
 }
 
 .container {
@@ -416,6 +433,9 @@ p {
   line-height: 30px;
   color: var(--paragraph-color);
 }
+.about-area-one .about-text {
+  margin-top: 39px;
+}
 .about-area-one .about-text .section-title {
   max-width: 655px;
   padding-left: 30px;
@@ -452,6 +472,39 @@ p {
 }
 .about-area-one .about-text .about-list-info-second {
   padding-left: 140px;
+}
+
+/*=============================
+	04. Services part
+===============================*/
+/* services area one start */
+.services-area-one {
+  background-color: var(--section-background);
+}
+.services-area-one .section-title .dark {
+  color: var(--black);
+}
+.services-area-one .section-title .no-after::after {
+  display: none;
+}
+.services-area-one .service-info {
+  margin-top: 40px;
+}
+.services-area-one .all-services {
+  padding-bottom: 120px;
+}
+.services-area-one .all-services .service-item {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border-colour);
+}
+.services-area-one .all-services .service-item .title {
+  color: var(--black);
+  font-family: var(--font-secondary);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-left: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
