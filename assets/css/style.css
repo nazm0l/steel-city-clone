@@ -507,4 +507,62 @@ p {
   margin-left: 30px;
 }
 
+/*=============================
+	04. Recent Work part
+===============================*/
+/* recent work area one start */
+.recent-work-area-one::before {
+  content: "";
+  width: 100%;
+  height: 300px;
+  background-color: var(--black);
+  position: absolute;
+  z-index: -10;
+}
+.recent-work-area-one .title {
+  color: var(--white);
+}
+.recent-work-area-one .slider-controller {
+  background-color: var(--white);
+  gap: 20px;
+}
+.recent-work-area-one .slider-controller .left-arrow {
+  background-color: var(--primary);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.recent-work-area-one .slider-controller .left-arrow svg {
+  stroke: var(--white);
+}
+.recent-work-area-one .recent-work-slider .slider-item .slider-img img {
+  border-radius: 5px;
+}
+.recent-work-area-one .recent-work-slider .slider-item .slider-text {
+  background-color: rgba(23, 23, 23, 0.9);
+  padding: 30px;
+}
+.recent-work-area-one .recent-work-slider .slider-item .slider-text .text .title {
+  color: var(--white);
+  font-family: var(--font-secondary);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.recent-work-area-one .recent-work-slider .slider-item .slider-text .text p {
+  color: var(--white);
+}
+.recent-work-area-one .recent-work-slider .slider-item .slider-text .icon {
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary);
+  border-radius: 5px;
+}
+.recent-work-area-one .recent-work-slider .slider-item .slider-text .icon svg {
+  width: 20px;
+  height: 20px;
+  stroke: var(--white);
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,75 @@
+/*=============================
+	04. Recent Work part
+===============================*/
+/* recent work area one start */
+
+.recent-work-area-one{
+    &::before{
+        content: '';
+        width: 100%;
+        height: 300px;
+        background-color: var(--black);
+        position: absolute;
+        z-index: -10;
+    }
+
+    .title{
+        color: var(--white);
+    }
+
+    .slider-controller{
+        background-color: var(--white);
+        gap: 20px;
+        
+        .left-arrow{
+            background-color: var(--primary);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+
+            svg{
+                stroke: var(--white);
+            }
+        }
+    }
+
+    .recent-work-slider{
+        .slider-item{
+            .slider-img{
+                img{
+                    border-radius: 5px;
+                }
+            }
+
+            .slider-text{
+                background-color: rgba(23, 23, 23, 0.9);
+                padding: 30px;
+                .text{
+                    .title{
+                        color: var(--white);
+                        font-family: var(--font-secondary);
+                        font-size: 24px;
+                        font-weight: 700;
+                        line-height: 30px;
+                        margin-bottom: 10px;
+                    }
+                    p{
+                        color: var(--white);
+                    }
+                }
+                .icon{
+                    width: 50px;
+                    height: 50px;
+                    background-color: var(--primary);
+                    border-radius: 5px;
+
+                    svg {
+                        width: 20px;
+                        height: 20px;
+                        stroke: var(--white);
+                    }
+                }
+            }
+        }
+    }
+}
